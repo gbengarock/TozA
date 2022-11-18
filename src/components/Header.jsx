@@ -11,7 +11,7 @@ const Header = () => {
     });
   });
   return (
-    <div className='bg-white shadow-lg py-2'>
+    <div className='bg-white shadow-sm py-2'>
         <div className='w-[90%] flex justify-between mx-auto'>
             <img src={tozilla} className='w-[70px] h-[20px] mt-2' />
             {!isMobile ? <Link to='/login' className='px-10 py-3 text-center bg-[#FF971E] text-white text-xs rounded-xl'>Login to account</Link>: <Link to='/login' className='hidden px-10 py-3 text-center bg-[#FF971E] text-white text-xs rounded-xl'>Login to account</Link>}

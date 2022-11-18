@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
+import BusinessInfo from './components/BusinessInfo';
 import ForgetPassword from './components/ForgetPassword';
 import Header from './components/Header';
 import Login from './components/Login';
-import Register from './components/Register';
+import PersonalInfo from './components/PersonalInfo';
 import ResetPassword from './components/ResetPassword';
 import ResetSuccess from './components/ResetSuccess';
 import VerificationCode from './components/VerificationCode';
@@ -25,7 +26,8 @@ function App(){
     <>
     <Header />
           <Routes>
-                <Route path='/signup' element={<Register  />} />
+                <Route path='/signup' element={<BusinessInfo />} />
+                <Route path='/personal-info' element={<PersonalInfo />} />
                 <Route path='/verify' element={<Verify />} />
                 <Route path='/verification-code' element={<VerificationCode />} />
                 <Route path='/verified' element={<Verified />} />
